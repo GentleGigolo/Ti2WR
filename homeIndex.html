@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+<head>
+<title>TAS iGEM Wiki</title>
+<link rel="stylesheet" type="text/css" href="Resources\bootstrap.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="Resources\bootstrap-theme.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="Resources\bootstrap-theme.css" media="screen" />
+<link rel="shortcut icon" href="Resources\LogoNoBackShrunk.png" >
+<link rel="stylesheet" href="Resources\SlideShowCSS.css">
+<link rel="stylesheet" href="Resources\font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+<style>
+body {
+background-color:#fffaf0;
+background-image:url("http://subtlepatterns.com/patterns/cubes.png");
+<!-- http://subtlepatterns.com/patterns/cubes.png -->
+<!-- http://subtlepatterns.com/patterns/ricepaper_v3.png -->
+background-repeat:repeat;
+<!-- background-size:cover; -->
+}
+#top {
+height:40%;
+width:100%;
+display: block;
+}
+#topSpace {
+width:100%;
+}
+.imageContainer {
+float:right;
+}
+#homeTitleContainer {
+<!-- height: 50%; -->
+padding: 0% 0% 0% 0%;
+}
+#homeTitleTextBox {
+text-align:center;
+margin: auto auto;
+font-size:200px;
+font-family: 'Abel', sans-serif;
+width:100%;
+color:#595959;
+margin:-40px 0px 0px 0px;
+transition: color 0.25s ease;
+<!-- -webkit-transform: scale(1, 1.25); -->
+<!-- color:#92c988; -->
+}
+#homeTitleTextBox:hover {
+color:#1a1a1a;
+<!-- color:#9fd596; -->
+}
+.titleLetter {
+margin-right: -13px;
+margin-left: -13px;
+}
+#bottom {
+height:56%;
+width:100%;
+}
+#bottomList {
+list-style-type:none;
+display:flex;
+}
+#bottomList li {
+display:inline-block;
+width:33%;
+height:100%;
+}
+#menuItems {
+padding:0px 0px 0px 0px;
+}
+#vertMenu li{
+list-style-type:none;
+height:auto;
+padding:2px 15px 2px 15px;
+margin:4px 10px 30.5px 5px;
+color:#242424;
+
+font-size:25px;
+font-family: 'Abel', sans-serif;
+<!-- font-family: 'Iceland', cursive; -->
+transition: background-color 0.25s ease;
+background-color:#3f8a42;
+#92c988; dark green
+#89abee; dark blue
+text-decoration:none;
+text-align:center;
+border-radius:1px;
+<!-- #242424 -->
+<!-- padding:10px 25px 10px 25px; -->
+}
+#vertMenu li:hover{
+background-color:#42a146	;
+#9fd596; light green
+#9cbaf4; light blue
+}
+#vertMenu a{
+text-decoration:none;
+color:black;
+}
+#slideShow {
+<!-- height:50%;  -->
+<!-- margin-bottom:-198.5px; -->
+}
+<!-- Begin css for slideshow -->
+#slides {
+  display: none
+}
+
+#slides .slidesjs-navigation {
+  margin-top:3px;
+}
+
+#slides .slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
+
+#slides .slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
+
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(https://lh6.googleusercontent.com/-vtyezdODYvE/U0S2xNtE8TI/AAAAAAAAAJU/KkHRW1n1iQ4/w13-h39-no/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+#slides a:link,
+#slides a:visited {
+  color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+  color: #9e2020
+}
+
+.navbar {
+  overflow: hidden
+}
+
+.slideContainer {
+  margin: 0 auto
+}
+<!-- End css for slideshow -->
+#projIntroContainer {
+padding:0px 0px 0px 0px;
+text-align:center;
+
+}
+#projIntro {
+margin-top: -8px;
+padding-top: 0px;
+text-align:justify;
+padding-right: 40px;
+font-size:19px;
+font-family: 'Poiret One', cursive;
+}
+
+@keyframes boxShadowIn
+{
+from {box-shadow:0px 0px 0px #ffffff;}
+to {box-shadow:10px 10px 5px #888888;}
+}
+/*Safari and Chrome:*/
+@-webkit-keyframes boxShadowIn
+{
+from {box-shadow:0px 0px 0px #ffffff;}
+to {box-shadow:10px 10px 5px #888888;}
+}
+@keyframes boxShadowOut
+{
+from {box-shadow:10px 10px 5px #888888;}
+to {box-shadow:0px 0px 0px #ffffff;}
+}
+/*Safari and Chrome:*/
+@-webkit-keyframes boxShadowOut
+{
+from {box-shadow:10px 10px 5px #888888;}
+to {box-shadow:0px 0px 0px #ffffff;}
+}
+@keyframes textShadowIn
+{
+from {text-shadow:0px 0px 0px #ffffff;}
+to {text-shadow:10px 10px 5px #888888;color:#ffffff;}
+}
+
+/*Safari and Chrome:*/
+@-webkit-keyframes textShadowIn
+{
+from {text-shadow:0px 0px 0px #ffffff;}
+to {text-shadow:10px 10px 5px #888888;color:#ffffff;}
+}
+@keyframes textShadowOut
+{
+from {text-shadow:10px 10px 5px #888888;color:#ffffff;}
+to {text-shadow:0px 0px 0px #ffffff;}
+}
+
+/*Safari and Chrome:*/
+@-webkit-keyframes textShadowOut
+{
+from {text-shadow:10px 10px 5px #888888;color:#ffffff;}
+to {text-shadow:0px 0px 0px #ffffff;}
+}
+
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+  body {
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+  .slideContainer {
+	width: auto;
+	position:relative;
+  }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+  .slideContainer {
+	width: auto;
+  }
+  #homeTitleTextBox {
+	font-size:10px;
+	}
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+  .slideContainer {
+	width: 600px;
+  }
+  #homeTitleTextBox {
+	font-size:90px;
+	}
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {
+  .slideContainer {
+	width: 600px;
+  }
+  #homeTitleTextBox {
+	font-size:200px;
+	}
+}
+</style>
+
+</head>
+<body>
+	<div id="top">
+		<div id="topSpace">
+			<div class="imageContainer">
+				<img height="50px" width="66px" src="http://2013.igem.org/wiki/images/4/46/Igem_qgem_logo.png">
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div id="" class="row">
+				<div class="col-lg-12">
+					<div id="homeTitleTextBox">
+						<span class="titleLetter" id="let1">E</span>
+						<span class="titleLetter" id="bacto">-</span>
+						<span class="titleLetter" id="let2">M</span>
+						<span class="titleLetter" id="let3">O</span>
+						<span class="titleLetter" id="let4">R</span>
+						<span class="titleLetter" id="let5">T</span>
+						<span class="titleLetter" id="let6">A</span>
+						<span class="titleLetter" id="let7">L</span>
+						<span class="titleLetter" id="let8">I</span>
+						<span class="titleLetter" id="let9">T</span>
+						<span class="titleLetter" id="let10">Y</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="bottom">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3">
+					<div id="menuItems">
+						<ul id="vertMenu">
+						<a href="http://2014hs.igem.org/Team:TAS_Taipei/Project"><li>Project</li></a>
+						<a href="http://2014hs.igem.org/Team:TAS_Taipei/Team"><li>Team</li></a>
+						<a href="http://2014hs.igem.org/Team:TAS_Taipei/Outreach"><li>Outreach</li></a>
+						<a href="http://2014hs.igem.org/Team:TAS_Taipei/Safety"><li>Safety</li></a>
+						<a href="http://2014hs.igem.org/Team:TAS_Taipei/Journal"><li>Journal</li></a>
+						
+						</ul>
+					</div>
+				</div>
+			<div class="col-lg-6">
+				<div id="slideShow">
+				 <!-- The container is used to define the width of the slideshow -->
+					  <div class="slideContainer">
+						<div id="slides">
+						  <img src="Resources\example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+						  <img src="Resources\example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+						  <img src="Resources\example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+						  <img src="Resources\example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+						  <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+						  <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+						</div>
+					  </div>
+					  <!-- End SlidesJS Required: Start Slides -->
+					<!-- <img class="rounded" height="374px" width="374px" src="http://3.bp.blogspot.com/-hSYxvEZm9Hc/US4NTTLvn8I/AAAAAAAAABo/bSCV__TIAb0/s1600/Korean-Jesus.jpg"> -->
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="row">
+					<div class="col-lg-12">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div id="projIntroContainer">
+							<div id="projIntro">
+								Benjamin Franklin stated after the establishment of the Constitution, &ldquo;Nothing can be said to be certain, except, death and taxes.&rdquo; Though he certainly does seems right about the latter, we challenge the former: can natural human death be controlled? This year, we have chosen to tackle one essential aspect of this question: the regulation of telomere length. 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- SlidesJS Required: Link to jQuery -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!-- End SlidesJS Required -->
+
+<!-- SlidesJS Required: Link to jquery.slides.js -->
+<script src="Resources\jquery.slides.min.js"></script>
+<!-- End SlidesJS Required -->
+<script>
+$(function() {
+  $('#slides').slidesjs({
+	width: 940,
+	height: 528,
+	navigation: false
+  });
+});
+</script>
+<script>
+  less = {
+    env: "development",
+    async: false,
+    fileAsync: false,
+    poll: 1000,
+    functions: {},
+    dumpLineNumbers: "comments",
+    relativeUrls: false,
+    rootpath: ":/a.com/"
+  };
+</script>
+<script src="Resources\less-1.7.0.min.js"></script>
+</body>
+
+
+</html>
